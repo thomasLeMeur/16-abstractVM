@@ -1,0 +1,4 @@
+push int8(65)
+pop
+assert int8(65)
+exit

@@ -1,0 +1,12 @@
+add
+sub
+mul
+div
+mod
+push int8(1)
+add
+sub
+mul
+div
+mod
+exit

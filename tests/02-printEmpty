@@ -1,0 +1,4 @@
+push int8(65)
+pop
+print
+exit

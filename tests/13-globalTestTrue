@@ -1,0 +1,56 @@
+;;Creation d'une stack de tous les types
+push double(512.512)
+push float(256.256)
+push int32(128)
+push int16(64)
+push int8(65)   ; character pour tester le
+;;				; dump et le print
+
+; try to print a non printable character
+push int8(17)
+print
+pop
+
+;;
+
+print	;; affiche A
+dump	; affiche les valeurs numeriques
+
+add		;; 512.512 256.256 128 129
+dump
+
+sub		;  512.512 256.256 -1
+dump
+
+mul		;  512.512 -256.256
+dump
+
+div		;  -2.0
+dump
+
+push int8(-1) ; -2.0 -1
+add		;  -3.0
+dump
+
+push int8(2) ; -3.0 2
+dump
+
+mod		;  -1.0
+dump
+
+push int32(132)	; -1.0 132
+push int16(12)	; -1.0 132 12
+dump
+
+;pop the last entry and check the value at the top of the stack
+pop
+assert	int32(132)
+
+; flush the stack
+pop
+pop
+dump
+
+exit
+
+;end

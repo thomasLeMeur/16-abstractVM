@@ -1,0 +1,3 @@
+push int16(65)
+assert int8(66)
+exit

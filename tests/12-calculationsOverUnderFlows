@@ -1,0 +1,25 @@
+push int8(127)
+push int8(1)
+add
+pop
+pop
+
+push int16(-32768)
+push int8(1)
+sub
+pop
+pop
+
+push int32(300002768)
+push int8(127)
+mul
+pop
+pop
+
+push float(200000000000000000000000000000000000000.0)
+push float(-0.001)
+div
+pop
+pop
+
+exit

@@ -1,0 +1,19 @@
+push int8(16)
+push int8(2)
+add
+push int16(0)
+div
+div
+div
+div
+push int16(0)
+push int16(0)
+dump
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
